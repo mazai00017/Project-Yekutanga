@@ -1,50 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>References</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive IT 3203 research site explaining the evolution of HTTP, HTTPS, TLS, QUIC, and HTTP/3.">
+  <title>Research Resources and Comments | The Evolution of HTTP and HTTPS</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <div>
+        <p class="eyebrow">IT 3203 Project Milestone 3</p>
+        <h1>The Evolution of HTTP and HTTPS</h1>
+        <p class="tagline">How web communication grew from simple document requests into secure, responsive, high-performance internet infrastructure.</p>
+      </div>
+      <div class="protocol-badge" aria-label="Protocol focus">
+        <span>HTTP</span>
+        <span>TLS</span>
+        <span>QUIC</span>
+      </div>
+    </div>
+  </header>
 
-<header>
-<h1>The Evolution of HTTP and HTTPS</h1>
-<p>IT 3203 Project Milestone 1</p>
-</header>
+  <nav class="site-nav" aria-label="Main navigation">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">Menu</button>
+    <div class="menu-links" id="main-menu">
+      <a href="index.html">Home</a>
+      <a href="history.html">History</a>
+      <a href="security.html">Security</a>
+      <a href="performance.html">HTTP/3</a>
+      <a href="concepts.html">Key Concepts</a>
+      <a href="references.html" aria-current="page">References</a>
+      <a href="about.html">About</a>
+      <a href="quiz.html">Quiz</a>
+    </div>
+  </nav>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="history.html">History</a>
-<a href="security.html">Security</a>
-<a href="concepts.html">Concepts</a>
-<a href="references.html">References</a>
-<a href="about.html">About</a>
-</nav>
+  <main id="main-content" class="page-shell">
+    <section class="page-title">
+      <p class="eyebrow">References</p>
+      <h2>Research Resources and Comments</h2>
+      <p>This page uses the project reference list from the earlier milestone and keeps the sources focused on developer documentation, web design guidance, cybersecurity explainers, class material, and practical testing tools.</p>
+    </section>
+    
+    <section class="section-card">
+      <h3>Research resources with comments</h3>
+      <p>Each resource below includes a short note explaining how it supports the website. These sources replace the more formal standards-document references so the research page fits the class project style better.</p>
+    </section>
 
-<div class="container">
+    <section class="reference-list" aria-label="Annotated references">
+      <article class="reference-item">
+        <h3><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">MDN Web Docs: HTTP - Hypertext Transfer Protocol</a></h3>
+        <p>Used for the basic definition of HTTP, the client-server model, request and response concepts, methods, headers, status codes, and the overall role of HTTP in web development.</p>
+      </article>
 
-<!-- References page -->
-<h2>References</h2>
-<p>The information in this website comes from my first essay on the evolution of HTTP and HTTPS.</p>
+      <article class="reference-item">
+        <h3><a href="https://hpbn.co/brief-history-of-http/">High Performance Browser Networking: Brief History of HTTP</a></h3>
+        <p>Used to explain how HTTP grew from simple document retrieval into a performance-sensitive protocol that supports modern web applications and richer pages.</p>
+      </article>
 
-<ol>
-<li>MDN Web Docs - HTTP: Hypertext Transfer Protocol</li>
-<li>High Performance Browser Networking - Brief History of HTTP</li>
-<li>INNOQ - A Brief History of HTTP</li>
-<li>U.S. Web Design System - HTTP/2 Performance Guide</li>
-<li>SecurityScorecard - What is HTTPS and Why is it Essential?</li>
-<li>Fortinet - What is HTTPS?</li>
-</ol>
+      <article class="reference-item">
+        <h3><a href="https://www.innoq.com/en/blog/2025/04/a-brief-history-of-http/">INNOQ: A Brief History of HTTP</a></h3>
+        <p>Used for a more current historical overview that connects HTTP/1.1, HTTP/2, and HTTP/3 with the web's shift toward faster and more reliable communication.</p>
+      </article>
 
-<h2>Why Sources Matter</h2>
-<p>Using research sources helps explain the history, function, and future of HTTP and HTTPS more clearly. It also makes the website more accurate and connected to the original assignment.</p>
+      <article class="reference-item">
+        <h3><a href="https://designsystem.digital.gov/performance/http2/">U.S. Web Design System: HTTP/2 Performance Guide</a></h3>
+        <p>Used for the performance section, especially the explanation that HTTP/2 changed how resources are downloaded and affected older optimization habits.</p>
+      </article>
 
-</div>
+      <article class="reference-item">
+        <h3><a href="https://securityscorecard.com/blog/what-is-https-and-why-is-it-essential-for-cybersecurity/">SecurityScorecard: What Is HTTPS and Why Is It Essential?</a></h3>
+        <p>Used to connect HTTPS with cybersecurity, encryption in transit, protection from interception, and trust between users and websites.</p>
+      </article>
 
-<footer>
-<p>TThis website was created as a class project for IT 3203. 
-Visit the class site: 
-<a href="https://ksuweb.github.io/IT3203/" target="_blank">KSU IT 3203</a></p>
-</footer>
+      <article class="reference-item">
+        <h3><a href="https://www.fortinet.com/resources/cyberglossary/what-is-https">Fortinet: What Is HTTPS?</a></h3>
+        <p>Used for a clear security-focused explanation of how HTTPS encrypts data sent between users and websites and why it is safer than plain HTTP.</p>
+      </article>
 
+      <article class="reference-item">
+        <h3><a href="https://www.upguard.com/blog/what-is-https">UpGuard: What Is HTTPS and Why Is It Important?</a></h3>
+        <p>Used to support the discussion of HTTPS as the secure version of HTTP and to explain why encrypted browsing matters for privacy and risk reduction.</p>
+      </article>
+
+      <article class="reference-item">
+        <h3><a href="https://www.w3schools.com/html/html_forms.asp">W3Schools: HTML Forms</a> and <a href="https://www.w3schools.com/js/js_validation.asp">JavaScript Form Validation</a></h3>
+        <p>Used while building the quiz page, including form structure, input controls, buttons, and basic JavaScript validation ideas.</p>
+      </article>
+
+      <article class="reference-item">
+        <h3><a href="https://ksuweb.github.io/IT3203/">IT 3203 class examples and project material</a></h3>
+        <p>Used to keep the project aligned with class expectations for separate HTML pages, external CSS, external JavaScript, navigation, forms, and GitHub Pages publishing.</p>
+      </article>
+
+      <article class="reference-item">
+        <h3><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">GitHub Pages Documentation: Creating a GitHub Pages Site</a></h3>
+        <p>Used for deployment guidance so the finished project can be published from the repository and opened with the public GitHub Pages URL.</p>
+      </article>
+
+      <article class="reference-item">
+        <h3><a href="https://developer.chrome.com/docs/devtools/">Browser Developer Tools</a></h3>
+        <p>Used for testing and debugging layout, mobile viewport behavior, navigation, file paths, console errors, and the quiz script during the Milestone 3 revision.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>This website was created as a class project for IT 3203. Visit the class site: <a href="https://ksuweb.github.io/IT3203/">KSU IT 3203</a>.</p>
+    <p>Created by Ryan Mangunda | Kennesaw State University</p>
+  </footer>
 </body>
 </html>

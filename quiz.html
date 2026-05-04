@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive IT 3203 research site explaining the evolution of HTTP, HTTPS, TLS, QUIC, and HTTP/3.">
+  <title>Self-Assessment Quiz | The Evolution of HTTP and HTTPS</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <div>
+        <p class="eyebrow">IT 3203 Project Milestone 3</p>
+        <h1>The Evolution of HTTP and HTTPS</h1>
+        <p class="tagline">How web communication grew from simple document requests into secure, responsive, high-performance internet infrastructure.</p>
+      </div>
+      <div class="protocol-badge" aria-label="Protocol focus">
+        <span>HTTP</span>
+        <span>TLS</span>
+        <span>QUIC</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">Menu</button>
+    <div class="menu-links" id="main-menu">
+      <a href="index.html">Home</a>
+<a href="history.html">History</a>
+<a href="security.html">Security</a>
+<a href="performance.html">HTTP/3</a>
+<a href="concepts.html">Key Concepts</a>
+<a href="references.html">References</a>
+<a href="about.html">About</a>
+<a href="quiz.html" aria-current="page">Quiz</a>
+    </div>
+  </nav>
+
+  <main id="main-content" class="page-shell">
+    <section class="page-title">
+      <p class="eyebrow">Quiz</p>
+      <h2>Self-Assessment Quiz</h2>
+      <p>A working JavaScript quiz that checks understanding of HTTP, HTTPS, TLS, QUIC, and status codes.</p>
+    </section>
+    
+<section class="section-card">
+  <h3>Self-assessment quiz</h3>
+  <p>Answer each question, then submit the quiz to see your score and feedback. The quiz uses JavaScript from the external script file.</p>
+  <form id="quizForm" class="quiz-form">
+    <fieldset class="question-card">
+      <legend>1. HTTP stands for:</legend>
+      <label><input type="radio" name="q1" value="a"> HyperText Transfer Protocol</label>
+      <label><input type="radio" name="q1" value="b"> High Transfer Text Program</label>
+      <label><input type="radio" name="q1" value="c"> Hyperlink Tracking Tool Protocol</label>
+    </fieldset>
+
+    <fieldset class="question-card">
+      <legend>2. Which protocol is the secure version of HTTP?</legend>
+      <label><input type="radio" name="q2" value="a"> FTP</label>
+      <label><input type="radio" name="q2" value="b"> HTTPS</label>
+      <label><input type="radio" name="q2" value="c"> SMTP</label>
+    </fieldset>
+
+    <fieldset class="question-card">
+      <legend>3. HTTP is described as stateless because:</legend>
+      <label><input type="radio" name="q3" value="a"> It does not use any status codes.</label>
+      <label><input type="radio" name="q3" value="b"> Each request is independent unless extra state mechanisms are added.</label>
+      <label><input type="radio" name="q3" value="c"> It only works inside one country or state.</label>
+    </fieldset>
+
+    <fieldset class="question-card">
+      <legend>4. Which newer transport protocol does HTTP/3 use?</legend>
+      <label><input type="radio" name="q4" value="a"> SMTP</label>
+      <label><input type="radio" name="q4" value="b"> QUIC</label>
+      <label><input type="radio" name="q4" value="c"> POP3</label>
+    </fieldset>
+
+    <fieldset class="question-card">
+      <legend>5. What does TLS mainly add to HTTPS?</legend>
+      <label><input type="radio" name="q5" value="a"> Visual design templates</label>
+      <label><input type="radio" name="q5" value="b"> Encryption, integrity, and authentication</label>
+      <label><input type="radio" name="q5" value="c"> Automatic search engine ranking</label>
+    </fieldset>
+
+    <fieldset class="question-card">
+      <legend>6. Select all true statements about HTTP.</legend>
+      <label><input type="checkbox" name="q6" value="a"> It uses a request-response model.</label>
+      <label><input type="checkbox" name="q6" value="b"> It is an application-layer protocol.</label>
+      <label><input type="checkbox" name="q6" value="c"> Plain HTTP encrypts all traffic by itself.</label>
+      <label><input type="checkbox" name="q6" value="d"> It can transfer HTML, images, scripts, and API data.</label>
+    </fieldset>
+
+    <fieldset class="question-card">
+      <legend>7. Type the three-letter acronym for the security protocol used by HTTPS.</legend>
+      <label for="q7">Answer:</label>
+      <input type="text" id="q7" name="q7" autocomplete="off">
+    </fieldset>
+
+    <fieldset class="question-card">
+      <legend>8. A 404 status code usually means:</legend>
+      <label><input type="radio" name="q8" value="a"> The resource was not found.</label>
+      <label><input type="radio" name="q8" value="b"> The request succeeded.</label>
+      <label><input type="radio" name="q8" value="c"> The browser is using dark mode.</label>
+    </fieldset>
+
+    <div class="form-actions">
+      <button type="submit">Submit Quiz</button>
+      <button type="reset" class="secondary-button">Reset</button>
+    </div>
+  </form>
+  <div id="quizResult" class="result-box" aria-live="polite"></div>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>This website was created as a class project for IT 3203. Visit the class site: <a href="https://ksuweb.github.io/IT3203/">KSU IT 3203</a>.</p>
+    <p>Created by Ryan Mangunda | Kennesaw State University</p>
+  </footer>
+</body>
+</html>
